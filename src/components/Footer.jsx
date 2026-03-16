@@ -1,9 +1,12 @@
+import { useState, useEffect } from "react";
 import "../assets/css/footer.css";
 import { FaFacebookF, FaInstagram, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import logo from "../assets/images/logo.png";
 
 function Footer() {
 
+     const [open, setOpen] = useState(false);
 
     const phoneNumber = "919876543210"; // replace with your WhatsApp number
 
@@ -11,6 +14,24 @@ function Footer() {
 I would like to know more about admissions, programs, and activities for my child.`;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+
+// Menu Scroll 
+    const scrollToSection = (id) => {
+
+        document.getElementById(id).scrollIntoView({
+            behavior: "smooth"
+        });
+
+        setOpen(false);
+
+        // close bootstrap menu
+        const menu = document.getElementById("navMenu");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        }
+
+    };
 
 
     return (
@@ -51,7 +72,7 @@ I would like to know more about admissions, programs, and activities for my chil
                     <div className="footerCol">
 
                         <h3 className="footerLogo">
-                            Bright Beginners
+                            <img src={logo} alt="Bright Beginners Logo" /> <span className="ms-2">Bright Beginners</span>
                         </h3>
 
                         <p>
@@ -77,11 +98,12 @@ I would like to know more about admissions, programs, and activities for my chil
 
                         <ul className="footerLinks">
 
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#programs">Programs</a></li>
-                            <li><a href="#activities">Activities</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a onClick={() => scrollToSection("home")}>Home</a></li>
+                            <li><a onClick={() => scrollToSection("about")}>About</a></li>
+                            <li><a onClick={() => scrollToSection("facilities")}>Facilities</a></li>
+                            <li><a onClick={() => scrollToSection("nursery")}>Nursery</a></li>
+                            <li><a onClick={() => scrollToSection("activities")}>Activities</a></li>
+                            <li><a onClick={() => scrollToSection("admission")}>Admission</a></li>
 
                         </ul>
 
@@ -105,24 +127,17 @@ I would like to know more about admissions, programs, and activities for my chil
                     <div className="footerCol map">
 
                         <h4>Find Us</h4>
-
-                        {/* <iframe
-                            title="Bright Beginners Pre-Primary School"
-                            src="https://maps.google.com/maps?q=Bright%20Beginners%20Pre-Primary%20School%20Pune&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                            width="100%"
-                            height="400"
-                            style={{ border: 0 }}
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        /> */}
-
-                    <iframe
-src="https://www.google.com/maps?q=18.5204,73.8567&z=15&output=embed"
-width="100%"
-height="220"
-style="border:0; border-radius:12px;"
-loading="lazy">
-</iframe>
+                        <div className="school-map">
+                            <iframe
+                                title="Bright Beginners Pre-Primary School"
+                                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d95718.61019873558!2d73.7693758!3d18.4568772!3m2!1i1024!2i768!4f13.1!2m1!1sbright%20beginners!5e1!3m2!1sen!2sin!4v1773633923820!5m2!1sen!2sin"
+                                width="100%"
+                                height="400"
+                                style={{ border: 0 }}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            />
+                        </div>
 
                     </div>
 
@@ -133,7 +148,7 @@ loading="lazy">
 
                 <div className="footerBottom">
 
-                    © 2026 Bright Beginners Pre Primary School
+                    © {new Date().getFullYear()} Bright Beginners Pre Primary School
 
                 </div>
 

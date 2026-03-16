@@ -217,7 +217,6 @@
 
 
 /* POPUP OVERLAY */
-
 .popupOverlay {
     position: fixed;
     top: 0;
@@ -235,7 +234,6 @@
 
 
 /* POPUP BOX */
-
 .popupBox {
     background: rgba(255, 255, 255, 0.95);
     padding: 35px;
@@ -280,7 +278,6 @@
 }
 
 /* SUBMIT BUTTON */
-
 .submitBtn {
     width: 100%;
     margin-top: 10px;
