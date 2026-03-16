@@ -13,7 +13,7 @@
 /* MAIN IMAGE */
 
 .facilityMainImage {
-    width: 95%;
+    width: 90%;
     max-height: 420px;
     object-fit: contain;
     border-radius: 15px;
@@ -43,7 +43,7 @@
     font-size: 34px;
     color: #00cd4d;  /*#ff4444;*/
     margin-bottom: 10px;
-    filter: drop-shadow(0px 0px 25px #00cd4d);
+    filter: drop-shadow(0px 0px 25px #00cd4fbd);
 }
 
 .facilityCard p {

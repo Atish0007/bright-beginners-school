@@ -58,15 +58,16 @@
         opacity: 0;
     }
 }
+
 /* End navabar scroll */
 
 
 
 .text-justify {
-  text-align: justify !important;
+    text-align: justify !important;
 }
 
-.fw-500{
+.fw-500 {
     font-weight: 500 !important;
 }
 
@@ -81,4 +82,31 @@
 
 .section h2 {
     font-weight: 700;
+}
+
+.whiteShadow {
+    filter: drop-shadow(0px 0px 10px #fff);
+}
+
+
+
+@media (min-width: 992px) {
+    .px-lg-7 {
+        padding-right: 7rem !important;
+        padding-left: 7rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .px-md-6 {
+        padding-right: 6rem !important;
+        padding-left: 6rem !important;
+    }
+}
+
+@media (max-width:768px) {
+    .pxmb-4 {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
 }

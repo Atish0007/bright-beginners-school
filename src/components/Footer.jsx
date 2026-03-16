@@ -82,8 +82,8 @@ I would like to know more about admissions, programs, and activities for my chil
 
                         <div className="footerSocial">
 
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaInstagram /></a>
+                            <a href="https://www.facebook.com/people/Bright-Beginners-Pre-Primary-School/100068507050115/" target="_blank"><FaFacebookF /></a>
+                            <a href="https://www.instagram.com/bright_beginners_school?igsh=dXlpd2Y5bGVxc3Zo" target="_blank"><FaInstagram /></a>
 
                         </div>
 

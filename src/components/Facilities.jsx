@@ -45,7 +45,7 @@ function Facilities() {
 
                     {/* ROW 2 FACILITY CARDS */}
 
-                    <div className="row mt-0 mt-md-5 g-3 g-md-4">
+                    <div className="row mt-3 mt-md-5 g-3 g-md-4">
 
                         <div className="col-lg-3 col-md-4 col-6">
                             <div className="facilityCard">

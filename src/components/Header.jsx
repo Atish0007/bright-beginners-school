@@ -69,10 +69,10 @@ function Header() {
 
             <nav className={`navbar navbar-expand-lg navbar-light header ${isSticky ? "sticky-nav" : ""} ${hideSticky ? "sticky-hide" : ""}`}>
 
-                <div className="container-fluid px-4 px-md-5 px-lg-5">
+                <div className="container-fluid pxmb-4 px-md-6 px-lg-7">
 
                     <a className="navbar-brand ms-3 ms-md-0">
-                        <img src={logo} alt="Bright Beginners logo" className="logo" />
+                        <img src={logo} alt="Bright Beginners logo" className="logo" /> <span className="whiteShadow text-white ms-3">Bright Beginners</span>
                     </a>
 
                     {/* <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">

@@ -1,6 +1,4 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
+import {useEffect} from "react";
 // import heroImg from './assets/hero.png'
 // import './App.css'
 
@@ -15,6 +13,30 @@ import Footer from "./components/Footer";
 // import AdmissionPopup from "./components/AdmissionPopup";
 
 function App() {
+
+
+  useEffect(() => {
+   const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+  const handleKeyDown = (e) => {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") ||
+      (e.ctrlKey && e.shiftKey && e.key === "J") ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  };
+  document.addEventListener("contextmenu", handleContextMenu);
+  document.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    document.removeEventListener("keydown", handleKeyDown);
+    document.removeEventListener("contextmenu", handleContextMenu);
+  };
+}, []);
 
   return (
     <>
