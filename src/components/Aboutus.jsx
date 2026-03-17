@@ -27,7 +27,7 @@ function Aboutus() {
                             {/* <h2 className="text-center">About Us</h2>  fst-italic */}
 
                             <p className="fw-500 text-md-justify mb-0 mb-md-3">
-                                Bright Beginners Pre Primary School is dedicated to providing quality early childhood education.
+                                Shree swami samarth educational foundation bright beginners pre-primary school is dedicated to providing quality early childhood education.
                                 Our aim is to build a strong foundation for children during their most important learning years.
                             </p>
                             <p className="fw-500 text-normal text-md-justify mb-0 mb-md-3">
