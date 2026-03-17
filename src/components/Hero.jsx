@@ -8,7 +8,7 @@ function Hero() {
     const handleWhatsApp = () => {
         const phoneNumber = "918208025622";
 
-        const message = `Hello Bright Beginners Pre Primary School! 
+        const message = `Hello,\nShree Swami Samarth Educational Foundation \nBright Beginners Pre-Primary School! \n
 I would like to know more about admissions, programs, and activities for my child.`;
 
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -25,7 +25,7 @@ I would like to know more about admissions, programs, and activities for my chil
 
                 <div className="container text-center mt-5">
                     <div className="heroDiv">
-                        <h1>Welcome to Bright Beginners Pre Primary School</h1>
+                        <h1>Welcome to Shree Swami Samarth Educational Foundation Bright Beginners Pre-Primary School</h1>
 
                         <p className="mb-1">
                             Bright Beginners Pre Primary School is a caring and joyful place where young children begin their learning journey.

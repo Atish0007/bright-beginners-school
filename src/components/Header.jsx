@@ -72,7 +72,7 @@ function Header() {
                 <div className="container-fluid pxmb-4 px-md-6 px-lg-7">
 
                     <a className="navbar-brand ms-3 ms-md-0">
-                        <img src={logo} alt="Bright Beginners logo" className="logo" /> <span className="whiteShadow text-white ms-3">Bright Beginners</span>
+                        <img src={logo} alt="Bright Beginners logo" className="logo" /> <span className="whiteShadow text-white ms-3 fs-18">Bright Beginners</span>
                     </a>
 
                     {/* <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
