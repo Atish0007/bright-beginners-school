@@ -130,7 +130,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all .4s ease;
+    transition: all .5s ease;
     box-shadow: 0 10px 25px rgba(255, 120, 0, 0.35);
     position: relative;
     overflow: hidden;
